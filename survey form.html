@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Survey Form</title>
+    <style>
+        body {
+            background-color:aqua;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .form-container {
+            width: 1250px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 30px;
+            height: 500px;
+            border-radius: 5px;
+        }
+        .form-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .abc{
+            display: flex;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+        .abc label {
+            width: 50%;
+            text-align: right;
+            padding-right: 15px;
+        }
+        .abc input,
+        .abc select {
+            width: 250px;
+            padding: 5px;
+        }
+        .options {
+            width: 250px;
+        }
+        .options input {
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <div class="form-container">
+        <div class="form-title">
+            Let us know how we can improve freeCodeCamp
+        </div>
+        <form>
+            <div class="abc">
+                <label>* Name:</label>
+                <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="abc">
+                <label>* Email:</label>
+                <input type="email" placeholder="Enter your Email">
+            </div>
+            <div class="abc">
+                <label>* Age:</label>
+                <input type="number" placeholder="Age">
+            </div>
+            <div class="abc">
+                <label>Which option best describes your current role?</label>
+                <select>
+                    <option>Student</option>
+                    <option>Intern</option>
+                    <option>Employee</option>
+                </select>
+            </div>
+            <div class="abc">
+                <label>How likely is that you would recommend freeCodeCamp to a friend?</label>
+                <div class="options">
+                    <input type="radio" name="radio"> Definitely<br>
+                    <input type="radio" name="radio"> Maybe<br>
+                    <input type="radio" name="radio"> Not sure
+                </div>
+            </div>
+            <div class="abc">
+                <label>What do you like most in FCC:</label>
+                <select>
+                    <option>Select an option</option>
+                </select>
+            </div>
+            <div class="abc">
+                <label>
+                    Things that should be improved in the future<br>
+                    (Check all that apply):
+                </label>
+                <div class="options">
+                    <input type="checkbox"> Front-end Projects<br>
+                    <input type="checkbox"> Back-end Projects<br>
+                    <input type="checkbox"> Data Visualization
+                </div>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
