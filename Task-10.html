@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: white;
+            color: black;
+        }
+        .container{
+            display: flex;
+            gap: 30px;
+            margin-top: 10px;
+            padding: 90px;
+        }
+        h1{
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+        .cards{
+            gap: 30px;
+            position: relative;
+            width: 250px;
+            overflow: hidden;
+        }
+        img{
+            width: 100%;
+            height:250px;
+            object-fit: cover;
+        }
+        .content{
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            z-index: 2;
+        }
+        .display{
+            text-decoration: none;
+            color: white;
+        }
+        .cards p{
+            transition: 0.4s;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .cards:hover p{
+        transform: translateY(-20px);
+       }
+       .display span{
+        opacity: 0;
+        transition: 0.4s;
+      }
+      .cards:hover span{
+       opacity: 1;
+      }
+      hr{
+        width: 50%;
+        border: 2px solid orangered;
+        margin-left: 0;
+      }
+      .cards hr{
+      opacity: 0;
+      transition: 0.4s;
+    }
+    .cards:hover hr{
+    opacity: 1;  
+    }
+    .cards::after{
+      content:"";
+      position:absolute;
+      bottom:0;
+      left:0;
+      width:100%;
+      height:60%;
+      background:linear-gradient(transparent, rgba(0,0,0,0.7));
+     pointer-events:none;
+    }
+    </style>
+</head>
+<body>
+    <h1>Perspectives</h1>
+    <div class="container">
+    <div class="cards">
+      <h2>Articles</h2>
+      <img src="../IMAGES/aa.jpg">
+      <div class="content">
+      <a href="#" class="display">
+      <p>Examining the Potential of CDO-as-a-services for the Lloyd's and London Market</p>
+      <hr>
+      <span>EXPLORE MORE ></span>
+      </a>
+    </div>
+    </div>
+    <div class="cards">
+        <h2>Articles</h2>
+        <img src="../IMAGES/bb.jpg">
+        <div class="content">
+        <a href="#" class="display">
+        <p>Generative AI:A Catalyst for Data-Driven Growth</p>
+        <hr>
+        <span>EXPLORE MORE ></span>
+        </a>
+    </div>
+    </div>
+    <div class="cards">
+        <h2>Whitepapers</h2>
+        <img src="../IMAGES/c.jpg">
+        <div class="content">
+        <a href="#" class="display">
+        <p>Pharma Analytics:A Dynamic Approach to segmentation</p>
+        <hr>
+        <span>EXPLORE MORE ></span>
+        </a>
+    </div>
+    </div>
+    <div class="cards">
+        <h2>Whitepapers</h2>
+        <img src="../IMAGES/dd.jpg">
+        <div class="content">
+        <a href="#" class="display">
+        <p>Your Guide to Establish & operationalize a Robust Enterprise Data Office</p>
+        <hr>
+        <span>EXPLORE MORE ></span>
+        </a>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
