@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: white;
+            color: black;
+            padding:40px ;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+
+        }
+        .cards{
+            flex: 1;
+            max-width: 350px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .cards:hover{
+         transform: translateY(-8px);
+        }
+        h1{
+            font-size: 20px;
+        }
+        img{
+         width: 100%;
+         height: 200px;
+         object-fit: cover;
+         border-radius: 10px;
+       }
+        .abc{
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+       }
+        p{
+            font-size: 16px;
+        }
+        .display{
+         text-decoration: none;
+         color: black;
+        }
+        .arrow{
+            color: orange;
+            transition: transform 0.3s;
+        }
+        .cards:hover .arrow{
+        transform: translateX(6px);
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cards">
+            <a href="https://www.geeksforgeeks.org/css/css-tutorial/" class="display">
+            <img src="../IMAGES/1.jpeg">
+             <div class="abc">
+             <span style="color:grey;">Blog</span>
+             <span class="arrow">➜</span>
+             </div>
+            <hr>
+            <h1>Balancing the risks and opportunities of AI-driven procurement</h1>
+            <p>The many benefits AI can bring to procurement organizations are well...</p>
+            </a>
+        </div>
+        <div class="cards">
+            <a href="#" class="display">
+            <img src="../IMAGES/2.jpeg">
+            <div class="abc">
+             <span style="color:grey;">Blog</span>
+             <span class="arrow">➜</span>
+             </div>
+            <hr>
+            <h1>2026 Supply Chain Outlook:4 Macro Trends Procurement Leaders Mus..</h1>
+            <p>As 2026 approaches, the global economy is settling into a new pattern.Not a crisis.No..</p>
+            </a>
+        </div>
+        <div class="cards">
+            <a href="#" class="display">
+            <img src="../IMAGES/3.jpeg">
+             <div class="abc">
+             <span style="color:grey;">Blog</span>
+             <span class="arrow">➜</span>
+             </div>
+            <hr>
+            <h1>Ten trends set to transform procurement in 2026</h1>
+            <p>2025 was another year of widespread change and Transformation for procureme..</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
