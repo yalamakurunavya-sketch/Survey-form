@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Cards</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+        img{
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+        .display{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .display .display-1{
+             flex: 1;
+             min-width: 250px;
+             position: relative;
+        }
+        .cards{
+            text-decoration: none;
+            color: white;
+            display: block; 
+        }
+        p{
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            padding: 0 20px;
+            cursor: pointer;
+        }
+        time{
+            color: rgb(91, 82, 82);
+            padding: 0 20px;
+            display: block;
+        }
+        .cards:hover p,
+        .cards:hover time,
+        .cards:active p,
+        .cards:active time{
+        text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="display">
+        <div class="display-1">
+            <a href="#" class="cards">
+                <img src="../IMAGES/Image-1.webp" alt="">
+                <p>Janata Sahakari Bank Selects TCS BaNCS&trade; to Power Next-Gen Banking Experience</p>
+                <time datetime="2026-02-02">02 Feb 2026</time>
+            </a>
+        </div>
+        <div class="display-1">
+            <a href="#" class="cards">
+                <img src="../IMAGES/image-2.webp" alt="">
+                <p>TCS Global Study Identifies Critical Gaps in AI Adoption among Retailers</p>
+                <time datetime="2026-01-29">29 Jan 2026</time>
+            </a>
+        </div>
+        <div class="display-1">
+            <a href="#" class="cards">
+                <img src="../IMAGES/image-3.jpg" alt="">
+                <p>TCS Deepens its LATAM Reach with a New Brazil Campus; To Add 1,600 Jobs</p>
+                <time datetime="2026-01-27">27 Jan 2026</time>
+            </a>
+        </div>
+        <div class="display-1">
+            <a href="#" class="cards">
+                <img src="../IMAGES/image-4.jpg" alt="">
+                <p>Kalmar Partners with TCS for Strategic AI-powered Transformation of its Enterprise IT Landscape</p>
+                <time datetime="2026-01-22">22 Jan 2026</time>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
