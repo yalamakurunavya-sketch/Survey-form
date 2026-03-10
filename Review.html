@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reviews Slider</title>
+<style>
+body{
+    background-color: rgb(25, 25, 29);
+}
+.container{
+    color: white;
+    text-align: center;
+}
+.slider{
+    max-width: 1100px;      
+    margin: 100px auto;      
+    overflow: hidden;
+}
+.slider input{
+    display: none;
+}
+.slides{
+    display: flex;
+    width: 100%;
+     transition: 0.06s ;
+}
+.slide{
+    width: 200%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+   
+}
+.a{
+    width: 300px;             
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+}
+.slides span{
+    color: orangered;
+}
+#s1:checked ~ .slides{
+    transform: translateX(0%);
+}
+
+#s2:checked ~ .slides{
+    transform: translateX(-100%);
+}
+.dots{
+    text-align: center;
+    margin-top: 50px;
+}
+.dots label{
+    width: 10px;
+    height: 10px;
+    background: gray;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 6px;
+    cursor: pointer;
+}
+#s1:checked ~ .dots label[for="s1"],
+#s2:checked ~ .dots label[for="s2"]{
+    background: white;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <p>Testimonials</p>
+<h1>OUR CLIENTS <span style="color:orangered;">REVIEWS</span></h1>
+<div class="slider">
+    <input type="radio" name="slide" id="s1" checked>
+    <input type="radio" name="slide" id="s2">
+    <div class="slides">
+        <div class="slide">
+            <div class="a">
+                <p><strong>Anjali Sharma</strong></p>
+                <span>★★★★★</span>
+                <p>Oppty's e-commerce platform increased our online sales by 45% in just three months!</p>
+            </div>
+            <div class="a">
+                <p><strong>Rohan Patel, Tech Entrepreneur</strong></p>
+                <span>★★★★★</span>
+                <p>Their AI-driven solutions optimized our workflows, saving us significant costs.</p>
+            </div>
+            <div class="a">
+                <p><strong>Priyanka Reddy, Marketing Head</strong></p>
+                <span>★★★★★</span>
+                <p>The responsive website Oppty built for us perfectly captures our brand's essence.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="a">
+                <p><strong>Anjali Sharma</strong></p>
+                <span>★★★★★</span>
+                <p>Oppty's e-commerce platform increased our online sales by 45% in just three months!</p>
+            </div>
+            <div class="a">
+                <p><strong>Rohan Patel, Tech Entrepreneur</strong></p>
+                <span>★★★★★</span>
+                <p>Their AI-driven solutions optimized our workflows, saving us significant costs.</p>
+            </div>
+            <div class="a">
+                <p><strong>Priyanka Reddy, Marketing Head</strong></p>
+                <span>★★★★★</span>
+                <p>The responsive website Oppty built for us perfectly captures our brand's essence.</p>
+            </div>
+        </div>
+    </div>
+    <div class="dots">
+        <label for="s1"></label>
+        <label for="s2"></label>
+    </div>
+</div>
+<p>We are proud to partner with industry leaders.</p>
+<h1>OUR VALUED <span style="color:orangered;">CLIENTS</span></h1>
+</div>
+</body>
+</html>
