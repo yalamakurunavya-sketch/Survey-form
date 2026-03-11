@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protfolio</title>
+    <style>
+        body {
+            background: black;
+            color: white;
+            padding-top: 80px;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 15px 40px;
+            background: black;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        .menu {
+            display: flex;
+            gap: 50px;
+            list-style: none;
+        }
+        .menu a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+        .menu a:hover {
+            color: orange;
+        }
+        img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            margin: 20px;
+        }
+
+        .a h1 {
+            margin: 20px;
+        }
+        .b {
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+            padding: 40px;
+        }
+        .b h1 {
+            min-width: 200px;
+        }
+        .b p {
+            max-width: 700px;
+            line-height: 1.6;
+        }
+        .c {
+            padding: 40px;
+        }
+        .c p {
+            background: rgb(97, 89, 89);
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+        .d {
+            padding: 40px;
+        }
+        .card {
+            background: rgb(81, 73, 73);
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 2px solid orange;
+        }
+        .e {
+            padding: 40px;
+        }
+        .e p {
+            background: rgb(69, 62, 62);
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <h2 class="logo">Portfolio</h2>
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+    </nav>
+    <div class="a" id="home">
+        <img src="../IMAGES/Navya.jpeg">
+        <h1>NAVYA <br>YALAMAKURU</h1>
+    </div>
+    <div class="b" id="about">
+        <h1>ABOUT ME</h1>
+        <P>I am Navya Yalamakuru, a Computer Science graduate passionate about technology and
+            software development. I have skills in Java, HTML, CSS, and SQL, and enjoy building
+            innovative projects and solving real-world problems.</P>
+    </div>
+    <div class="c" id="hobbies">
+        <h2>HOBBIES</h2>
+        <p>Reading Books</p>
+        <p>Playing Games</p>
+        <p>Dancing</p>
+        <p>Singing</p>
+    </div>
+    <div class="d" id="education">
+        <h1>EDUCATIONAL BACKGROUND</h1>
+        <div class="card">
+            <h2>2022-2025:</h2>
+            <p>KALASALINGAM ACADEMY OF RESEARCH AND EDUCATION,Tamil Nadu Bachelor of Technology
+                in Computer Science Engineering-82%</p>
+        </div>
+        <div class="card">
+            <h2>2019-2022:</h2>
+            <p>SRI CHAITANYA JUNIOR COLLEGE,Tirupati-91%</p>
+        </div>
+        <div class="card">
+            <h2>2018-2019:</h2>
+            <p>KESHAVA REDDY HIGH SCHOOL,PANYAM-92%</p>
+        </div>
+    </div>
+    <div class="e" id="skills">
+        <h2>PROGRAMMING LANGUAGES</h2>
+        <P>JAVA</P>
+        <P>SQL</P>
+        <P>HTML</P>
+        <P>CSS</P>
+        <P>JAVA SCRIPT</P>
+    </div>
+</body>
+
+</html>
